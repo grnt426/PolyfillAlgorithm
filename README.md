@@ -20,4 +20,3 @@ These files were provided for this assignment:
 * FillTest.java (renamed from fillTest.java)
 * Rasterizer.java
 * simpleCanvas.java
-This file was modified by IntelliJ IDEA 12.0 for binding GitHub repository
