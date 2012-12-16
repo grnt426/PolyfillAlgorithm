@@ -25,8 +25,10 @@ public class FillTest {
 		int x[] = new int[7];
 		int y[] = new int[7];
 
-        /* 
-		 * Use Student's drawPolygon 
+
+
+        /*
+		 * Use Student's drawPolygon
 		 */
 		x[0] = 10;
 		y[0] = 10;
@@ -36,12 +38,13 @@ public class FillTest {
 		y[2] = 20;
 		x[3] = 10;
 		y[3] = 20;
-		
-		/* 
-		 * LL => Lower Left Start, CCW => Vertices entered in 
-		 * counter clockwise progression 
+
+		/*
+		 * LL => Lower Left Start, CCW => Vertices entered in
+		 * counter clockwise progression
 		 */
 		R.drawPolygon(4, x, y, T);	/* Square, LL, CCW */
+
 
 		x[0] = 40;
 		y[0] = 30;
@@ -54,6 +57,7 @@ public class FillTest {
 
 		R.drawPolygon(4, x, y, T);	/* Rectangle, LR, CCW */
 
+
 		x[0] = 40;
 		y[0] = 90;
 		x[1] = 40;
@@ -64,6 +68,7 @@ public class FillTest {
 		y[3] = 90;
 
 		R.drawPolygon(4, x, y, T);	/* Rectangle, UR, CW */
+
 
 		x[0] = 10;
 		y[0] = 230;
@@ -76,6 +81,7 @@ public class FillTest {
 
 		R.drawPolygon(4, x, y, T);	/* Rectangle, UL, CW */
 
+
 		x[0] = 100;
 		y[0] = 10;
 		x[1] = 150;
@@ -84,6 +90,7 @@ public class FillTest {
 		y[2] = 20;
 
 		R.drawPolygon(3, x, y, T);	/* Isosceles, flat bottom */
+
 
 		x[0] = 100;
 		y[0] = 30;
@@ -112,6 +119,7 @@ public class FillTest {
 
 		R.drawPolygon(3, x, y, T);	/* Right */
 
+
 		x[0] = 10;
 		y[0] = 130;
 		x[1] = 20;
@@ -130,6 +138,7 @@ public class FillTest {
 
 		R.drawPolygon(3, x, y, T);	/* Right */
 
+
 		x[0] = 100;
 		y[0] = 70;
 		x[1] = 150;
@@ -138,6 +147,7 @@ public class FillTest {
 		y[2] = 90;
 
 		R.drawPolygon(3, x, y, T);	/* flat bottom - top left */
+
 
 		x[0] = 100;
 		y[0] = 100;
@@ -148,6 +158,7 @@ public class FillTest {
 
 		R.drawPolygon(3, x, y, T);	/* flat bottom - top right */
 
+
 		x[0] = 100;
 		y[0] = 170;
 		x[1] = 150;
@@ -156,6 +167,7 @@ public class FillTest {
 		y[2] = 130;
 
 		R.drawPolygon(3, x, y, T);	/* scalene */
+
 
 		x[0] = 200;
 		y[0] = 50;
@@ -167,6 +179,7 @@ public class FillTest {
 		y[3] = 10;
 
 		R.drawPolygon(4, x, y, T);     /* diamond */
+
 
 		x[0] = 200;
 		y[0] = 125;
@@ -182,6 +195,7 @@ public class FillTest {
 		y[5] = 100;
 
 		R.drawPolygon(6, x, y, T);     /* hexagon */
+
 
 		x[0] = 215;
 		y[0] = 225;
@@ -205,7 +219,6 @@ public class FillTest {
 		f.pack();
 		f.setResizable(false);
 		f.setVisible(true);
-
 	}
 
 }
