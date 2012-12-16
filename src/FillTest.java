@@ -8,12 +8,12 @@
 
 import java.awt.*;
 
-public class FillTest {
+public class FillTest{
 
-	public FillTest() {
+	public FillTest(){
 	}
 
-	static public void main(String[] args) {
+	static public void main(String[] args){
 
 		simpleCanvas T = new simpleCanvas(300, 300);
 		Rasterizer R = new Rasterizer(300);
@@ -24,7 +24,6 @@ public class FillTest {
 
 		int x[] = new int[7];
 		int y[] = new int[7];
-
 
 
         /*

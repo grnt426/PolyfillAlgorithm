@@ -20,7 +20,7 @@
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public class simpleCanvas extends Canvas {
+public class simpleCanvas extends Canvas{
 
 	public BufferedImage I;
 	private int clearC;
@@ -28,7 +28,7 @@ public class simpleCanvas extends Canvas {
 	private int height;
 	private Color curColor;
 
-	simpleCanvas(int w, int h) {
+	simpleCanvas(int w, int h){
 		width = w;
 		height = h;
 		I = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
@@ -39,23 +39,25 @@ public class simpleCanvas extends Canvas {
 	}
 
 
-	public void clear() {
-		for (int i = 0; i < width; i++)
-			for (int j = 0; j < height; j++)
+	public void clear(){
+		for(int i = 0; i < width; i++){
+			for(int j = 0; j < height; j++){
 				I.setRGB(i, j, curColor.getRGB());
+			}
+		}
 	}
 
-	public void setColor(float r, float g, float b) {
+	public void setColor(float r, float g, float b){
 		curColor = new Color(r, g, b);
 	}
 
 
-	public void setPixel(int x, int y) {
+	public void setPixel(int x, int y){
 		I.setRGB(x, (height - y - 1), curColor.getRGB());
 
 	}
 
-	public void paint(Graphics g) {
+	public void paint(Graphics g){
 		// draw pixels
 		g.drawImage(I, 0, 0, Color.red, null);
 	}
